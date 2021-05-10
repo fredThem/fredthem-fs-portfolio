@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+### Getting Started with Styleguidist [#](https://create-react-app.dev/docs/developing-components-in-isolation#getting-started-with-styleguidist)
+Styleguidist combines a style guide, where all your components are presented on a single page with their props documentation and usage examples, with an environment for developing components in isolation, similar to Storybook. In Styleguidist you write examples in Markdown, where each code snippet is rendered as a live editable playground.
+
+Run the following command inside your app’s directory
+```
+npm run styleguide
+```
+After that, follow the instructions on the screen.
+
+---
+### Analyzing the Bundle Size
+[Source map explorer](https://www.npmjs.com/package/source-map-explorer) analyzes JavaScript bundles using the source maps. This helps you understand where code bloat is coming from.
+
+To analyze the bundle run the production build then run the analyze script
+```
+npm run build
+npm run analyze
+```
