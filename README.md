@@ -99,7 +99,7 @@ npm run analyze
 ```
 ---
 
-### Using HTTPS in Development
+### [Using HTTPS in Development](https://create-react-app.dev/docs/using-https-in-development)
 
 > Note: this feature is available with react-scripts@0.4.0 and higher.
 
@@ -122,4 +122,12 @@ Linux, macOS (Bash)#
 HTTPS=true npm start
 ```
 > Note that the server will use a self-signed certificate, so your web browser will almost definitely display a warning upon accessing the page.
+
+To avoid having to set the environment variable each time, you can either include in the npm start script like so:
+```
+{
+  "start": "HTTPS=true react-scripts start"
+}
+```
+
 ---
