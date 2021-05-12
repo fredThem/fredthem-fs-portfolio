@@ -134,6 +134,14 @@ To avoid having to set the environment variable each time, you can either includ
 
 ### Starts [Storybook](https://storybook.js.org/docs/react/get-started/install) in development mode
 
-```
+``` 
 yarn storybook
 ```
+[Known Fix](https://github.com/storybookjs/storybook/issues/4764#issuecomment-737390932) Package Needs dependencie resolution to run correctly
+``` json
+  "resolutions": {
+    "@storybook/react/babel-loader": "8.1.0"
+  }
+```
+
+----
