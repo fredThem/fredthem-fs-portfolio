@@ -131,3 +131,9 @@ To avoid having to set the environment variable each time, you can either includ
 ```
 
 ---
+
+### Starts [Storybook](https://storybook.js.org/docs/react/get-started/install) in development mode
+
+```
+yarn storybook
+```
