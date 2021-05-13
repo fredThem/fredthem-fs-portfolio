@@ -134,7 +134,8 @@ To avoid having to set the environment variable each time, you can either includ
 
 ---
 
-### [StorybookJS](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/) 
+### [StorybookJS](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/)
+
 Storybook runs alongside your app in development mode. It helps you build UI components isolated from the business logic and context of your app.
 
 1. Run the test runner (Jest) in a terminal:
