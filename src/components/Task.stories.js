@@ -1,6 +1,7 @@
 import React from "react";
 import Task from "./Task";
 
+// Storybook about the component we are documenting
 export default {
   component: Task,
   title: "Task",

@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-```
+``` zsh
 yarn start
 ```
 
@@ -16,14 +16,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-```
+``` zsh
 yarn test
 ```
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```
+``` zsh
 yarn build
 ```
 
@@ -35,7 +35,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
+``` zsh
 yarn eject
 ```
 
@@ -87,7 +87,7 @@ Styleguidist combines a style guide, where all your components are presented on 
 
 Run the following command inside your app’s directory
 
-```
+``` zsh
 npm run styleguide
 ```
 
@@ -95,13 +95,13 @@ After that, follow the instructions on the screen.
 
 ---
 
-### Analyzing the Bundle Size
+### Analyze the Bundle Size
 
 [Source map explorer](https://www.npmjs.com/package/source-map-explorer) analyzes JavaScript bundles using the source maps. This helps you understand where code bloat is coming from.
 
 To analyze the bundle run the production build then run the analyze script
 
-```
+``` zsh
 npm run build
 npm run analyze
 ```
@@ -122,20 +122,6 @@ Windows (cmd.exe)#
 set HTTPS=true&&npm start
 ```
 
-(Note: the lack of whitespace is intentional.)
-
-Windows (Powershell)#
-
-```
-($env:HTTPS = "true") -and (npm start)
-```
-
-Linux, macOS (Bash)#
-
-```
-HTTPS=true npm start
-```
-
 > Note that the server will use a self-signed certificate, so your web browser will almost definitely display a warning upon accessing the page.
 
 To avoid having to set the environment variable each time, you can either include in the npm start script like so:
@@ -153,23 +139,23 @@ Storybook runs alongside your app in development mode. It helps you build UI com
 
 1. Run the test runner (Jest) in a terminal:
 
-```zsh
-yarn test --watchAll
-```
+    ```zsh
+    yarn test --watchAll
+    ```
 
 2. Start component explorer on port 6006:
 
-```zsh
-yarn storybook
-```
+    ```zsh
+    yarn storybook
+    ```
 
-### Run the frontend app proper on port 3000:
+3. Run the frontend app proper on port 3000:
 
-```
-yarn start
-```
+    ``` zsh
+    yarn start
+    ```
 
-> [Known Fix](https://github.com/storybookjs/storybook/issues/4764#issuecomment-737390932) Package Needs dependencie resolution to run correctly
+> [Known Issue Fix](https://github.com/storybookjs/storybook/issues/4764#issuecomment-737390932) Package Needs dependencie resolution to run correctly
 
 ```json
 "resolutions": {
