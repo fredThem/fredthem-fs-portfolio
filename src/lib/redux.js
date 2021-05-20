@@ -1,4 +1,5 @@
-// a simple dedux store/actions/reducer implementation
+// A simple redux store/actions/reducer implementation.
+// A true app would be more complex and separated into different files.
 import { createStore } from "redux";
 
 // The actions are the "names" of the changes that can happen to the store
