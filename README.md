@@ -166,8 +166,8 @@ Storybook runs alongside your app in development mode. It helps you build UI com
 
 ---
 
-deploy the storybook with Chromatic's script
+Deploy the storybook with Chromatic's script
 
-    ``` zsh
-    yarn chromatic
-    ```
+``` zsh
+yarn chromatic
+```
