@@ -1,6 +1,8 @@
-# View all comps in [chromatic](https://www.chromatic.com/build?appId=60a5dae198415900393e5c23&number=4)
+# View live app on [react-experimenting.herokuapp.com](https://react-experimenting.herokuapp.com/)
+## View all comps with [chromatic](https://www.chromatic.com/build?appId=60a5dae198415900393e5c23&number=4)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ---
 
