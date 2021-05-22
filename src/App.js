@@ -3,7 +3,10 @@ import store from "./lib/redux";
 
 import InboxScreen from "./components/InboxScreen";
 
-import "./index.scss";
+// import "./index.scss";
+import "./App.scss";
+
+// @flow
 
 function App() {
   return (
