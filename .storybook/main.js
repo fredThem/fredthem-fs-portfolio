@@ -6,5 +6,8 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-a11y",
     "storybook-addon-pseudo-states",
+    require.resolve("storybook-addon-grid/preset"),
+    require.resolve("storybook-addon-grid/chromatic"),
+    "storybook-addon-outline",
   ],
 };

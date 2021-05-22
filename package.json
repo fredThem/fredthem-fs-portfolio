@@ -96,6 +96,8 @@
     "@storybook/testing-react": "^0.0.12",
     "chromatic": "^5.8.3",
     "react-test-renderer": "^17.0.2",
+    "storybook-addon-grid": "^0.0.13",
+    "storybook-addon-outline": "^1.2.0",
     "storybook-addon-pseudo-states": "^1.0.0"
   },
   "resolutions": {
