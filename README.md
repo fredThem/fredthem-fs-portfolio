@@ -6,7 +6,7 @@
 
 ---
 
-### 🔭 View all isolated UI components on [storybook.js](https://master--60a5dae198415900393e5c23.chromatic.com/) 👈 👀
+## 🔭 View all isolated UI components on [storybook.js](https://master--60a5dae198415900393e5c23.chromatic.com/) 👈 👀
 
 *Runs alongside this app in development mode. Helps building UI components isolated from the business logic and context of the app.
 
@@ -28,7 +28,7 @@
     $ yarn chromatic
 ```
 
-#### Addons
+### Addons
 
 > Storybook [Controls](https://storybook.js.org/docs/react/essentials/controls)  gives you a graphical UI to interact with a component's arguments dynamically, without needing to code. It creates an addon panel next to your component examples ("stories"), so you can edit them live.
 
