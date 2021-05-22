@@ -1,16 +1,16 @@
+# Welcome to my react learning experiment's log 📓
+
  🌐 View live app 👉 [react-experimenting.herokuapp.com](https://react-experimenting.herokuapp.com/)
 
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://master--60a5dae198415900393e5c23.chromatic.com/)
-# Welcome to my react learning experiment's log 📓 
 
 ---
-### 🔭 View all isolated UI components on [storybook.js](https://master--60a5dae198415900393e5c23.chromatic.com/) 👈 👀 
 
-
-
+### 🔭 View all isolated UI components on [storybook.js](https://master--60a5dae198415900393e5c23.chromatic.com/) 👈 👀
 
 *Runs alongside this app in development mode. Helps building UI components isolated from the business logic and context of the app.
-> ☝️ I'm using [chromatic](https://www.chromatic.com/library?appId=60a5dae198415900393e5c23&branch=master)'s CI to catch unwanted regressions & work with others for 📥 PR's UI rewviewing and testing 🚧. 
+
+> ☝️ I'm using [chromatic](https://www.chromatic.com/library?appId=60a5dae198415900393e5c23&branch=master)'s CI to catch unwanted regressions & work with others for 📥 PR's UI rewviewing and testing 🚧.
 
 ![](2021-05-21-20-04-06.png =400x)
 
@@ -33,4 +33,3 @@
 > Storybook [Controls](https://storybook.js.org/docs/react/essentials/controls)  gives you a graphical UI to interact with a component's arguments dynamically, without needing to code. It creates an addon panel next to your component examples ("stories"), so you can edit them live.
 
 ---
-
