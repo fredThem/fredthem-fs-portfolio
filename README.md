@@ -1,6 +1,6 @@
 # Welcome to my react learning experiment's log 📓
 
- 🌐 View live app 👉 [react-experimenting.herokuapp.com](https://react-experimenting.herokuapp.com/)
+ 🌎 View live app 👉 [react-experimenting.herokuapp.com](https://react-experimenting.herokuapp.com/)
 
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://master--60a5dae198415900393e5c23.chromatic.com/)
 
