@@ -25,6 +25,7 @@
 
 #### Addons
 
+> Storybook [Controls](https://storybook.js.org/docs/react/essentials/controls)  gives you a graphical UI to interact with a component's arguments dynamically, without needing to code. It creates an addon panel next to your component examples ("stories"), so you can edit them live.
 
 ---
 
