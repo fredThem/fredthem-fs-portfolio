@@ -3,7 +3,7 @@
 # Welcome to my react learning experiment's log 📓 
 
 ---
-## 🔭 View all isolated UI components on [storybook.js](https://master--60a5dae198415900393e5c23.chromatic.com/) 👈 👀
+### 🔭 View all isolated UI components on [storybook.js](https://master--60a5dae198415900393e5c23.chromatic.com/) 👈 👀
 *Runs alongside this app in development mode. Helps building UI components isolated from the business logic and context of the app.
 > ☝️ I'm using [chromatic](https://www.chromatic.com/library?appId=60a5dae198415900393e5c23&branch=master)'s CI to catch unwanted regressions & work with others for PR's UI rewviewing and testing 🚧. 
 
@@ -23,6 +23,8 @@
     $ yarn chromatic
 ```
 
----
+#### Addons
 
+
+---
 
