@@ -2,12 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import { Provider } from "react-redux";
-import store from "./lib/redux";
+import store from "../lib/redux";
 
-import InboxScreen from "./components/InboxScreen";
-
-// import "./index.scss";
-import "./App.scss";
+// import InboxScreen from "./components/InboxScreen";
+import "../scss/App.scss";
 
 // @flow
 

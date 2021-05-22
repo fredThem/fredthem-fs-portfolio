@@ -1,4 +1,4 @@
-import "../src/index.scss";
+import "../src/scss/index.scss";
 import {
   INITIAL_VIEWPORTS,
   MINIMAL_VIEWPORTS,

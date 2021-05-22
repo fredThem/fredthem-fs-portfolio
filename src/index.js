@@ -1,13 +1,19 @@
-import "bootstrap/dist/css/bootstrap.css";
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.import "react-app-polyfill/ie9";
-import "./custom.scss";
-// import "./index.scss";
-
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+import "bootstrap/dist/css/bootstrap.css";
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.import "react-app-polyfill/ie9";
+import "./scss/custom.scss";
+import './scss/index.scss';
+
+import App from "./components/App";
+
+import 'jquery/dist/jquery.js';
+import 'popper.js/dist/umd/popper.js';
+import 'bootstrap/dist/js/bootstrap.js';
+
+import * as serviceWorker from './serviceWorker';
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -21,3 +27,8 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
