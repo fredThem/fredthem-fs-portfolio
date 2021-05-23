@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.1.10",
     "babel-plugin-relay": "^11.0.2",
     "bootstrap": "^5.0.1",
+    "firebase": "^8.6.2",
     "flow-bin": "^0.151.0",
     "graphql": "^15.5.0",
     "graphql.macro": "^1.4.2",
