@@ -1,19 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import * as serviceWorker from "./serviceWorker";
+import reportWebVitals from "./reportWebVitals";
 
 import "bootstrap/dist/css/bootstrap.css";
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.import "react-app-polyfill/ie9";
-import "./stylesheets/index.scss";
-
-import App from "./components/App";
 
 import 'jquery/dist/jquery.js';
 import 'popper.js/dist/umd/popper.js';
 import 'bootstrap/dist/js/bootstrap.js';
 
-import * as serviceWorker from './serviceWorker';
-import reportWebVitals from "./reportWebVitals";
+// css resets
+import "./stylesheets/index.css"
+
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>

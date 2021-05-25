@@ -1,4 +1,4 @@
-import "../src/stylesheets/index.scss";
+import "../src/stylesheets/App.scss";
 import {
   INITIAL_VIEWPORTS,
   MINIMAL_VIEWPORTS,
