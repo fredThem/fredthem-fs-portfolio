@@ -1,4 +1,12 @@
-@import '~@csstools/normalize.css'; /* bring in normalize.css styles */
+// Graphical variables
+// @import "config/fonts"; 
+// TODO #12 import custom fonts
+@import "config/colors";
+@import "config/bootstrap_variables";
+// External libraries
+// @import "bootstrap/scss/bootstrap";
+// CSS partials
+@import "pages/index";
 
 .App {
   text-align: center;
