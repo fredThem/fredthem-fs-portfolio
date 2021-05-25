@@ -7,22 +7,15 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Signup from "./components/pages/user/Signup";
 import AppNav from "./components/AppNav";
 
-export default function App() {
+function App() {
   return (
-    (<AppNav />),
-    (
-      <BrowserRouter>
-        <div className="app">
-          <div className="ui grid container">
-            <Switch>
-              <Route exact path="/signup" component={Signup} />
-            </Switch>
-          </div>
-        </div>
-      </BrowserRouter>
-    )
+    <div className="App bg-topographic">
+      <AppNav />
+    </div>
   );
 }
+
+export default App;
 
 /* function App() {
   return (
