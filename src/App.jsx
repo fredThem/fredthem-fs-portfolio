@@ -5,18 +5,22 @@ import "./stylesheets/App.scss";
 import firebase from "./firebase/config";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Signup from "./components/pages/user/Signup";
+import AppNav from "./components/AppNav";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="app">
-        <div className="ui grid container">
-          <Switch>
-            <Route exact path="/signup" component={Signup} />
-          </Switch>
+    (<AppNav />),
+    (
+      <BrowserRouter>
+        <div className="app">
+          <div className="ui grid container">
+            <Switch>
+              <Route exact path="/signup" component={Signup} />
+            </Switch>
+          </div>
         </div>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    )
   );
 }
 
