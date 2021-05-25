@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "../css/App.css";
+import "../stylesheets/App.scss";
 import firebase from "../firebase/config";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Signup from "./pages/user/Signup"

@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.import "react-app-polyfill/ie9";
-import "./css/index.css";
+import "./stylesheets/index.scss";
 
 import App from "./components/App";
 
