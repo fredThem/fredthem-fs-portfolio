@@ -1,1250 +1,216 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots PureInboxScreen Default 1`] = `
-<div
-  className="page lists-show"
->
-  <nav>
-    <h1
-      className="title-page"
+exports[`Storyshots App/Header Logged In 1`] = `
+<header>
+  <nav
+    className="navbar navbar-expand-lg navbar-light bg-light"
+  >
+    <a
+      className="navbar-brand"
+      href="#home"
+    >
+      <img
+        alt="Outrek's Logo"
+        className="d-inline-block align-top"
+        height="30"
+        src="/assets/images/brand/brand-logoIcon.svg"
+        width="auto"
+      />
+    </a>
+    <button
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
     >
       <span
-        className="title-wrapper"
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="basic-navbar-nav"
+    >
+      <div
+        className="mr-auto navbar-nav"
+        onKeyDown={[Function]}
       >
-        Taskbox
-      </span>
-    </h1>
+        <a
+          className="nav-link"
+          data-rb-event-key="#home"
+          href="#home"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Home
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="#link"
+          href="#link"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Link
+        </a>
+        <div
+          className="nav-item dropdown"
+        >
+          <a
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle nav-link"
+            data-rb-event-key={null}
+            href="#"
+            id="basic-nav-dropdown"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+          >
+            Dropdown
+          </a>
+        </div>
+      </div>
+      <form
+        className="form-inline"
+      >
+        <input
+          className="mr-sm-2 form-control"
+          placeholder="Search"
+          type="text"
+        />
+        <button
+          className="btn btn-outline-success"
+          disabled={false}
+          type="button"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div>
+      <button
+        className="btn btn-primary btn-sm"
+        disabled={false}
+        type="button"
+      >
+        Log out
+      </button>
+    </div>
   </nav>
-  <div
-    className="list-items"
-  >
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 1"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 2"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 3"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 4"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 6"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+</header>
 `;
 
-exports[`Storyshots PureInboxScreen Error 1`] = `
-<div
-  className="page lists-show"
->
-  <div
-    className="wrapper-message"
-  >
-    <span
-      className="icon-face-sad"
-    />
-    <div
-      className="title-message"
-    >
-      Oh no!
-    </div>
-    <div
-      className="subtitle-message"
-    >
-      something when wrong
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Task Archived 1`] = `
-<div
-  className="list-item TASK_ARCHIVED"
->
-  <label
-    className="checkbox"
-  >
-    <input
-      defaultChecked={true}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
-    <span
-      className="checkbox-custom"
-      onClick={[Function]}
-    />
-  </label>
-  <div
-    className="title"
-  >
-    <input
-      placeholder="Input title"
-      readOnly={true}
-      style={
-        Object {
-          "textOverflow": "ellipsis",
-        }
-      }
-      type="text"
-      value="Test Task"
-    />
-  </div>
-  <div
-    className="actions"
-    onClick={[Function]}
-  />
-</div>
-`;
-
-exports[`Storyshots Task Default 1`] = `
-<div
-  className="list-item TASK_INBOX"
->
-  <label
-    className="checkbox"
-  >
-    <input
-      defaultChecked={false}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
-    <span
-      className="checkbox-custom"
-      onClick={[Function]}
-    />
-  </label>
-  <div
-    className="title"
-  >
-    <input
-      placeholder="Input title"
-      readOnly={true}
-      style={
-        Object {
-          "textOverflow": "ellipsis",
-        }
-      }
-      type="text"
-      value="Test Task"
-    />
-  </div>
-  <div
-    className="actions"
-    onClick={[Function]}
+exports[`Storyshots App/Header Logged Out 1`] = `
+<header>
+  <nav
+    className="navbar navbar-expand-lg navbar-light bg-light"
   >
     <a
-      onClick={[Function]}
+      className="navbar-brand"
+      href="#home"
     >
-      <span
-        className="icon-star"
+      <img
+        alt="Outrek's Logo"
+        className="d-inline-block align-top"
+        height="30"
+        src="/assets/images/brand/brand-logoIcon.svg"
+        width="auto"
       />
     </a>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Task Long Title 1`] = `
-<div
-  className="list-item TASK_INBOX"
->
-  <label
-    className="checkbox"
-  >
-    <input
-      defaultChecked={false}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
-    <span
-      className="checkbox-custom"
+    <button
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
       onClick={[Function]}
-    />
-  </label>
-  <div
-    className="title"
-  >
-    <input
-      placeholder="Input title"
-      readOnly={true}
-      style={
-        Object {
-          "textOverflow": "ellipsis",
-        }
-      }
-      type="text"
-      value="This task's name is absurdly large. In fact, I think if I keep going I might end up with content overflow. What will happen? The star that represents a pinned task could have text overlapping. The text could cut-off abruptly when it reaches the star. I hope not!"
-    />
-  </div>
-  <div
-    className="actions"
-    onClick={[Function]}
-  >
-    <a
-      onClick={[Function]}
+      type="button"
     >
       <span
-        className="icon-star"
+        className="navbar-toggler-icon"
       />
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Task Pinned 1`] = `
-<div
-  className="list-item TASK_PINNED"
->
-  <label
-    className="checkbox"
-  >
-    <input
-      defaultChecked={false}
-      disabled={true}
-      name="checked"
-      type="checkbox"
-    />
-    <span
-      className="checkbox-custom"
-      onClick={[Function]}
-    />
-  </label>
-  <div
-    className="title"
-  >
-    <input
-      placeholder="Input title"
-      readOnly={true}
-      style={
-        Object {
-          "textOverflow": "ellipsis",
-        }
-      }
-      type="text"
-      value="Test Task"
-    />
-  </div>
-  <div
-    className="actions"
-    onClick={[Function]}
-  >
-    <a
-      onClick={[Function]}
-    >
-      <span
-        className="icon-star"
-      />
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
-    }
-  }
->
-  <div
-    className="list-items"
-  >
+    </button>
     <div
-      className="list-item TASK_INBOX"
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="basic-navbar-nav"
     >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
       <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 1"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
+        className="mr-auto navbar-nav"
+        onKeyDown={[Function]}
       >
         <a
+          className="nav-link"
+          data-rb-event-key="#home"
+          href="#home"
           onClick={[Function]}
+          onKeyDown={[Function]}
         >
-          <span
-            className="icon-star"
-          />
+          Home
         </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 2"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
         <a
+          className="nav-link"
+          data-rb-event-key="#link"
+          href="#link"
           onClick={[Function]}
+          onKeyDown={[Function]}
         >
-          <span
-            className="icon-star"
-          />
+          Link
         </a>
+        <div
+          className="nav-item dropdown"
+        >
+          <a
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle nav-link"
+            data-rb-event-key={null}
+            href="#"
+            id="basic-nav-dropdown"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+          >
+            Dropdown
+          </a>
+        </div>
       </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
+      <form
+        className="form-inline"
       >
         <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
+          className="mr-sm-2 form-control"
+          placeholder="Search"
           type="text"
-          value="Task 3"
         />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
+        <button
+          className="btn btn-outline-success"
+          disabled={false}
+          type="button"
         >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
+          Search
+        </button>
+      </form>
     </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
+    <div>
+      <button
+        className="btn btn-primary btn-sm"
+        disabled={false}
+        type="button"
+        value="Log in"
       >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
+        Log in
+      </button>
+      <button
+        className="btn btn-outline-primary btn-sm"
+        disabled={false}
+        type="button"
+        value="Sign up"
       >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 4"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
+        Sign up
+      </button>
     </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 6"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList Empty 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
-    }
-  }
->
-  <div
-    className="list-items"
-  >
-    <div
-      className="wrapper-message"
-    >
-      <span
-        className="icon-check"
-      />
-      <div
-        className="title-message"
-      >
-        You have no tasks
-      </div>
-      <div
-        className="subtitle-message"
-      >
-        Sit back and relax
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList Loading 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
-    }
-  }
->
-  <div
-    className="list-items"
-  >
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-    <div
-      className="loading-item"
-    >
-      <span
-        className="glow-checkbox"
-      />
-      <span
-        className="glow-text"
-      >
-        <span>
-          Loading
-        </span>
-         
-        <span>
-          cool
-        </span>
-         
-        <span>
-          state
-        </span>
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots TaskList With Pinned Tasks 1`] = `
-<div
-  style={
-    Object {
-      "padding": "3rem",
-    }
-  }
->
-  <div
-    className="list-items"
-  >
-    <div
-      className="list-item TASK_PINNED"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 6 (pinned)"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 1"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 2"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 3"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 4"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_INBOX"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          style={
-            Object {
-              "textOverflow": "ellipsis",
-            }
-          }
-          type="text"
-          value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+  </nav>
+</header>
 `;
