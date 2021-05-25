@@ -32,14 +32,6 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
             </rbs.NavDropdown.Item>
           </rbs.NavDropdown>
         </rbs.Nav>
-        <rbs.Form inline>
-          <rbs.FormControl
-            type="text"
-            placeholder="Search"
-            className="mr-sm-2"
-          />
-          <rbs.Button variant="outline-success">Search</rbs.Button>
-        </rbs.Form>
       </rbs.Navbar.Collapse>
       <div>
         {user ? (
