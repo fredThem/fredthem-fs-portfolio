@@ -1,17 +1,22 @@
 import React from "react";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./stylesheets/App.scss";
-
+import "@fontsource/roboto";
 import firebase from "./firebase/config";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Signup from "./components/pages/user/Signup";
-import AppNav from "./components/AppNav";
+import {Header} from "./components/Header";
 
 function App() {
   return (
-    <div className="App bg-topographic">
-      <AppNav />
-    </div>
+    <BrowserRouter>
+      <Header />
+      <div className="App">
+        <Switch>
+          <Route exact path="/signup" component={Signup} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

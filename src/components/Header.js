@@ -1,27 +1,76 @@
 import React from "react";
-import { logout } from "./firebase/auth";
-import { useHistory } from "react-router-dom";
-import { useSession } from "./firebase/UserProvider";
+import PropTypes from "prop-types";
+import * as rbs from "react-bootstrap";
+// import { Button } from "./Button";
+import styles from "./Header.module.css";
+import BrandLogoType from "./BrandLogo";
 
-function Header() {
-  const history = useHistory();
-  const { user } = useSession();
+export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
+  <header>
+    <rbs.Navbar bg="light" expand="lg">
+      <rbs.Navbar.Brand href="#home">
+        <BrandLogoType />
+      </rbs.Navbar.Brand>
+      <rbs.Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <rbs.Navbar.Collapse id="basic-navbar-nav">
+        <rbs.Nav className="mr-auto">
+          <rbs.Nav.Link href="#link">Link</rbs.Nav.Link>
+          <rbs.NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <rbs.NavDropdown.Item href="#action/3.1">
+              Action
+            </rbs.NavDropdown.Item>
+            <rbs.NavDropdown.Item href="#action/3.2">
+              Another action
+            </rbs.NavDropdown.Item>
+            <rbs.NavDropdown.Item href="#action/3.3">
+              Something
+            </rbs.NavDropdown.Item>
+            <rbs.NavDropdown.Divider />
+            <rbs.NavDropdown.Item href="#action/3.4">
+              Separated link
+            </rbs.NavDropdown.Item>
+          </rbs.NavDropdown>
+        </rbs.Nav>
+      </rbs.Navbar.Collapse>
+      <div>
+        {user ? (
+          <rbs.Button size="sm" onClick={onLogout} variant="primary">
+            Log out
+          </rbs.Button>
+        ) : (
+          <>
+              <rbs.Button
+                variant="outline-primary"
+              size="sm"
+              onClick={onLogin}
+              value="Log in"
+              type="button"
+            >
+              Log in
+            </rbs.Button>
+            <rbs.Button
+              variant="outline-primary"
+              size="sm"
+              onClick={onCreateAccount}
+              value="Sign up"
+              type="button"
+            >
+              Sign up
+            </rbs.Button>
+          </>
+        )}
+      </div>
+    </rbs.Navbar>
+  </header>
+);
 
-  const logoutUser = async () => {
-    await logout();
-    history.push("/login");
-  };
+Header.propTypes = {
+  user: PropTypes.shape({}),
+  onLogin: PropTypes.func.isRequired,
+  onLogout: PropTypes.func.isRequired,
+  onCreateAccount: PropTypes.func.isRequired,
+};
 
-  return (
-    <header>
-      <h2>The Grid</h2>
-      {!!user && (
-        <button className="ui secondary button logout" onClick={logoutUser}>
-          LOGOUT
-        </button>
-      )}
-    </header>
-  );
-}
-
-export default Header;
+Header.defaultProps = {
+  user: null,
+};
