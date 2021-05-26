@@ -13,7 +13,7 @@ exports[`Storyshots App/Header Logged In 1`] = `
         alt="Outrek's Logo"
         className="d-inline-block align-top"
         height="30"
-        src="/assets/images/brand/brand-logoIcon.svg"
+        src="brand-logoType.svg"
         width="auto"
       />
     </a>
@@ -37,15 +37,6 @@ exports[`Storyshots App/Header Logged In 1`] = `
         className="mr-auto navbar-nav"
         onKeyDown={[Function]}
       >
-        <a
-          className="nav-link"
-          data-rb-event-key="#home"
-          href="#home"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          Home
-        </a>
         <a
           className="nav-link"
           data-rb-event-key="#link"
@@ -73,22 +64,6 @@ exports[`Storyshots App/Header Logged In 1`] = `
           </a>
         </div>
       </div>
-      <form
-        className="form-inline"
-      >
-        <input
-          className="mr-sm-2 form-control"
-          placeholder="Search"
-          type="text"
-        />
-        <button
-          className="btn btn-outline-success"
-          disabled={false}
-          type="button"
-        >
-          Search
-        </button>
-      </form>
     </div>
     <div>
       <button
@@ -116,7 +91,7 @@ exports[`Storyshots App/Header Logged Out 1`] = `
         alt="Outrek's Logo"
         className="d-inline-block align-top"
         height="30"
-        src="/assets/images/brand/brand-logoIcon.svg"
+        src="brand-logoType.svg"
         width="auto"
       />
     </a>
@@ -140,15 +115,6 @@ exports[`Storyshots App/Header Logged Out 1`] = `
         className="mr-auto navbar-nav"
         onKeyDown={[Function]}
       >
-        <a
-          className="nav-link"
-          data-rb-event-key="#home"
-          href="#home"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          Home
-        </a>
         <a
           className="nav-link"
           data-rb-event-key="#link"
@@ -176,26 +142,10 @@ exports[`Storyshots App/Header Logged Out 1`] = `
           </a>
         </div>
       </div>
-      <form
-        className="form-inline"
-      >
-        <input
-          className="mr-sm-2 form-control"
-          placeholder="Search"
-          type="text"
-        />
-        <button
-          className="btn btn-outline-success"
-          disabled={false}
-          type="button"
-        >
-          Search
-        </button>
-      </form>
     </div>
     <div>
       <button
-        className="btn btn-primary btn-sm"
+        className="btn btn-outline-primary btn-sm"
         disabled={false}
         type="button"
         value="Log in"

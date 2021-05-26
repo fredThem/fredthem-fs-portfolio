@@ -1,7 +1,7 @@
 import React from "react";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./stylesheets/App.scss";
-
+import "@fontsource/roboto";
 import firebase from "./firebase/config";
 // import { Route, Switch, BrowserRouter } from "react-router-dom";
 // import Signup from "./components/pages/user/Signup";

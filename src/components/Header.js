@@ -14,7 +14,6 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
       <rbs.Navbar.Toggle aria-controls="basic-navbar-nav" />
       <rbs.Navbar.Collapse id="basic-navbar-nav">
         <rbs.Nav className="mr-auto">
-          <rbs.Nav.Link href="#home">Home</rbs.Nav.Link>
           <rbs.Nav.Link href="#link">Link</rbs.Nav.Link>
           <rbs.NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <rbs.NavDropdown.Item href="#action/3.1">
@@ -40,7 +39,8 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
           </rbs.Button>
         ) : (
           <>
-            <rbs.Button
+              <rbs.Button
+                variant="outline-primary"
               size="sm"
               onClick={onLogin}
               value="Log in"
