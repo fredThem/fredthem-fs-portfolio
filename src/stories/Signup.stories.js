@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SignUp } from "../components/pages/user/Signup";
+import SignUp from "../components/pages/user/Signup";
 
 export default {
   title: "Pages/Sign up",
