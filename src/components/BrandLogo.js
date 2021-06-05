@@ -8,8 +8,9 @@ function BrandLogoType() {
       width="auto"
       height="30"
       className="d-inline-block align-top"
-      alt="Outrek's Logo"
+      alt="Fred's Logo"
     />
+    
   );
 }
 

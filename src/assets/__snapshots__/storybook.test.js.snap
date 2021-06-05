@@ -10,7 +10,7 @@ exports[`Storyshots App/Header Logged In 1`] = `
       href="#home"
     >
       <img
-        alt="Outrek's Logo"
+        alt="Fred's Logo"
         className="d-inline-block align-top"
         height="30"
         src="brand-logoType.svg"
@@ -88,7 +88,7 @@ exports[`Storyshots App/Header Logged Out 1`] = `
       href="#home"
     >
       <img
-        alt="Outrek's Logo"
+        alt="Fred's Logo"
         className="d-inline-block align-top"
         height="30"
         src="brand-logoType.svg"
