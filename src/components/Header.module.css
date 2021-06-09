@@ -24,3 +24,9 @@ h1 {
 button + button {
   margin-left: 10px;
 }
+
+@media (max-width:576px) {
+  .hideOnMobile{
+    display: none;
+  }
+}

@@ -1,39 +1,26 @@
 import React from "react";
 // import PropTypes from "prop-types";
-import * as rbs from "react-bootstrap";
-// import { Button } from "./Button";
 import BrandLogoType from "./BrandLogo";
 
 import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
-import IconButton from "@material-ui/core/IconButton";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  ButtonGroup,
+  IconButton,
+} from "@material-ui/core/";
+
+import { purple } from "@material-ui/core/colors";
 import Link from "@material-ui/core/Link";
+// theme
 // icons
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
-import { createMuiTheme } from "@material-ui/core/styles";
-import { ThemeProvider } from "@material-ui/styles";
-
 import styles from "./Header.module.css";
-import purple from "@material-ui/core/colors/purple";
-// import { purple } from "@material-ui/core/colors";
-
-const myTheme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#23036A",
-    },
-  },
-  overrides: {
-    
-  },
-});
+import DownloadLink from "react-download-link";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,22 +35,18 @@ const useStyles = makeStyles((theme) => ({
   buttonText: {},
   buttonGroup: {
     marginRight: theme.spacing(2),
-
   },
   title: {
     flexGrow: 1,
     textAlign: "right",
   },
-  groupedTextBorder: {
-  },
-  
 }));
 
 export default function Header() {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
+  // const preventDefault = (event) => event.preventDefault();
   return (
-    <ThemeProvider theme={myTheme}>
+   
       <div className={classes.root}>
         <AppBar position="static" color="primary">
           <Toolbar>
@@ -71,24 +54,30 @@ export default function Header() {
               edge="start"
               className={classes.menuButton}
               color="inherit"
-              aria-label="menu"
+            aria-label="menu"
+            className="mr-auto"
             >
               <BrandLogoType />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              <Link
-                component="button"
-                variant="body2"
-                color="inherit"
-                download
-                href="src/assets/files/CV_FredericDesmarais_FullStackDev_ENG.pdf"
-                onClick={() => {
-                  console.info("Downloading my CV");
-                }}
-              >
-                Download my CV
-              </Link>
-            </Typography>
+            
+            <Link
+              component="button"
+              className="mr-3"
+              variant="body2"
+              color="inherit"
+              href="src/assets/files/CV_FredericDesmarais_FullStackDev_ENG.pdf"
+              onClick={() => {
+                console.info("Downloading my CV");
+              }}
+            >
+              <span className={styles.hideOnMobile}>Download my</span> CV
+            </Link>
+            {/* <DownloadLink
+              label="Save"
+              filename="myfile.txt"
+              exportFile={() => "Download my CV"}
+            /> */}
+            
             <ButtonGroup
               variant="text"
               // variant="contained"
@@ -106,7 +95,7 @@ export default function Header() {
           </Toolbar>
         </AppBar>
       </div>
-    </ThemeProvider>
+
   );
 }
 
