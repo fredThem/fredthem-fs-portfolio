@@ -1,54 +1,35 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    height: 140,
+    width: 100,
+  },
+  control: {
+    padding: theme.spacing(2),
+  },
+}));
 
 export default function BackgroundColor() {
+  const [spacing, setSpacing] = React.useState(2);
+  const classes = useStyles();
   return (
-    <Grid container spacing={1}>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="primary.main" color="primary.contrastText" p={2}>
-          primary.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="secondary.main" color="secondary.contrastText" p={2}>
-          secondary.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="error.main" color="error.contrastText" p={2}>
-          error.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="warning.main" color="warning.contrastText" p={2}>
-          warning.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="info.main" color="info.contrastText" p={2}>
-          info.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="success.main" color="success.contrastText" p={2}>
-          success.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="text.primary" color="background.paper" p={2}>
-          text.primary
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="text.secondary" color="background.paper" p={2}>
-          text.secondary
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="text.disabled" color="background.paper" p={2}>
-          text.disabled
-        </Box>
+    <Grid container className={classes.root} spacing={2}>
+      <Grid item xs={12}>
+        <Grid container justify="center" spacing={spacing}>
+          {[0, 1, 2].map((value) => (
+            <Grid key={value} item>
+              <Paper className={classes.paper} />
+            </Grid>
+          ))}
+        </Grid>
       </Grid>
     </Grid>
   );
