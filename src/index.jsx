@@ -17,12 +17,15 @@ import "./stylesheets/index.css";
 import { ThemeProvider } from "@material-ui/styles";
 import theme from "components/themes/theme";
 //rendering
+import { ParallaxProvider } from "react-scroll-parallax";
 import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <ParallaxProvider>
+        <App />
+      </ParallaxProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")

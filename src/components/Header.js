@@ -50,7 +50,7 @@ export default function Header() {
   // const preventDefault = (event) => event.preventDefault();
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="primary" position="fixed">
+      <AppBar position="static" color="primary">
         <Toolbar>
           <IconButton
             edge="start"
@@ -100,7 +100,6 @@ export default function Header() {
             >
               <LinkedInIcon color="inherit" />
             </Button>
-
           </ButtonGroup>
         </Toolbar>
       </AppBar>
