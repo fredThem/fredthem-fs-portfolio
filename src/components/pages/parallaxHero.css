@@ -1,0 +1,64 @@
+
+
+@media (max-width: 767.98px){
+  .parallax-banner-layer-1{
+    background-size: cover;
+    /* background-position: center 60% !important; */
+    background-repeat: no-repeat;
+  }
+  .parallax-banner-layer-2{
+    background-size: 100% auto !important;
+    background-position: center 110% !important;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 767.98px){
+  .parallax-banner-layer-1{
+    background-size: cover;
+    /* background-position: center 60% !important; */
+    background-repeat: no-repeat;
+  }
+  .parallax-banner-layer-2{
+    background-size: 100% auto !important;
+    background-position: center 110% !important;
+    background-repeat: no-repeat;
+  }
+}
+
+.parallax-banner-layer-0 {
+  /* width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative; */
+  animation-name: example;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-position:0% 50%;
+  opacity: 0;}
+  3% {opacity: 1;}
+  /* 25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;} */
+  95% {opacity: 1;}
+
+  100% {background-position:100% 50%;
+  opacity: 0;}
+}
+
+@media (min-width: 992px){
+  .parallax-banner-layer-2{
+    background-size: 100% auto !important;
+    background-position: center 160% !important;
+    background-repeat: no-repeat;
+  }
+  .parallax-banner-layer-1{
+    background-size: 100% auto;
+    /* background-position: center 60% !important; */
+    background-repeat: no-repeat;
+  }
+}

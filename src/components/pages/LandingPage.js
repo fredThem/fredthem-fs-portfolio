@@ -1,55 +1,81 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import MountainBg from "../../assets/images/hero/mountain-background.jpg";
+import {
+  Parallax,
+  ParallaxBanner,
+  ParallaxProvider,
+} from "react-scroll-parallax";
+import ParallaxBannerStyles from "./ParallaxBanner.module.css";
+import "./parallaxHero.css";
 
-export default function BackgroundColor() {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    height: 140,
+    width: 100,
+  },
+  control: {
+    padding: theme.spacing(2),
+  },
+}));
+
+const LandingPage = () => {
+  const [spacing, setSpacing] = React.useState(2);
+  const classes = useStyles();
+
+  const layers = [
+    {
+      image:
+        "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623299221/hero/clouds_ba2bum.svg",
+      amount: 0.25,
+    },
+    {
+      image:
+        "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623298541/hero/mountain-background_crop_hhcwxe.png",
+      amount: 0.25,
+    },
+    {
+      image:
+        "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623298291/hero/mountain-foregroundNme_mmnsl0.png",
+      amount: 0,
+    },
+
+  ];
+
   return (
-    <Grid container spacing={1}>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="primary.main" color="primary.contrastText" p={2}>
-          primary.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="secondary.main" color="secondary.contrastText" p={2}>
-          secondary.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="error.main" color="error.contrastText" p={2}>
-          error.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="warning.main" color="warning.contrastText" p={2}>
-          warning.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="info.main" color="info.contrastText" p={2}>
-          info.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="success.main" color="success.contrastText" p={2}>
-          success.main
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="text.primary" color="background.paper" p={2}>
-          text.primary
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="text.secondary" color="background.paper" p={2}>
-          text.secondary
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Box bgcolor="text.disabled" color="background.paper" p={2}>
-          text.disabled
-        </Box>
-      </Grid>
-    </Grid>
+    <>
+      <ParallaxProvider>
+        <div className="vertical">
+          <div className={ParallaxBannerStyles.bannerContainer}>
+            <ParallaxBanner
+              className={ParallaxBannerStyles.bannerBg}
+              layers={layers}
+              style={{ height: "95vh" }}
+            >
+              <h1> hello world</h1>
+            </ParallaxBanner>
+          </div>
+        </div>
+        <div className="vertical">
+          <div className={ParallaxBannerStyles.bannerContainer}>
+            <ParallaxBanner
+              className={ParallaxBannerStyles.bannerBg}
+              layers={layers}
+              style={{ height: "75vh" }}
+            >
+              <h1> hello world</h1>
+            </ParallaxBanner>
+          </div>
+        </div>
+      </ParallaxProvider>
+    </>
   );
-}
+};
+
+export default LandingPage;

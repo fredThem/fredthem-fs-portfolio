@@ -7,18 +7,26 @@ import "bootstrap/dist/css/bootstrap.css";
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.import "react-app-polyfill/ie9";
 
-import 'jquery/dist/jquery.js';
-import 'popper.js/dist/umd/popper.js';
-import 'bootstrap/dist/js/bootstrap.js';
+import "jquery/dist/jquery.js";
+import "popper.js/dist/umd/popper.js";
+import "bootstrap/dist/js/bootstrap.js";
 
 // css resets
-import "./stylesheets/index.css"
-
+import "./stylesheets/index.css";
+//theming
+import { ThemeProvider } from "@material-ui/styles";
+import theme from "components/themes/theme";
+//rendering
+import { ParallaxProvider } from "react-scroll-parallax";
 import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <ParallaxProvider>
+        <App />
+      </ParallaxProvider>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
