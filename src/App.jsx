@@ -5,8 +5,7 @@ import "@fontsource/roboto";
 import "@fontsource/fira-code";
 
 // import firebase from "./firebase/config";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
-import Signup from "./components/pages/user/Signup";
+import { BrowserRouter } from "react-router-dom";
 import LandingPage from "./components/pages/LandingPage";
 import Header from "./components/Header";
 

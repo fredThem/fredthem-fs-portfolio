@@ -1,13 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  ParallaxBanner,
-  ParallaxProvider,
-} from "react-scroll-parallax";
+import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 import ParallaxBannerStyles from "./ParallaxBanner.module.css";
 import "./parallaxHero.css";
 import Container from "@material-ui/core/Container";
-import CenteredGrid from './grid';
+import CenteredGrid from "./grid";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -54,25 +51,8 @@ const LandingPage = () => {
               style={{ height: "80vh" }}
             >
               <div className={ParallaxBannerStyles.parallaxChildren}>
-                <Container maxWidth="sm">
-                  <CenteredGrid    />
-                  {/* <Typography
-                    component="div"
-                    style={{ backgroundColor: "none", height: "100%" }}
-                    variant="h1"
-                    component="h2"
-                  >
-                    {" "}
-                    <Typography
-                      component="div"
-                      style={{ backgroundColor: "none", height: "100%" }}
-                      variant="h1"
-                      component="h2"
-                    >
-                      {" "}
-                      h1. Heading
-                    </Typography>
-                  </Typography> */}
+                <Container maxWidth="lg" style={{ marginTop: "-16%" }}>
+                  <CenteredGrid />
                 </Container>
               </div>
             </ParallaxBanner>

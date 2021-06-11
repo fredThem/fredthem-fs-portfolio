@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Grid } from "@material-ui/core";
 import "@fontsource/fira-code"; // Defaults to weight 400.
 // import { Typography } from '@material-ui/core/Typography';
+import { shadows } from "@material-ui/system";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     // so a smaller fontsize may be appropriate.
     fontFamily: "Fira Code",
     color: "white",
+    textShadow: "1px 1px 1px rgba(0,0,180,0.8)",
     // marginBottom: "10px",
   },
 }));
@@ -35,7 +37,7 @@ export default function CenteredGrid() {
         </Grid> */}
 
         <Grid item xs={12} sm={8} md={8}>
-        <Typography
+          <Typography
             // variant="h6"
             // component="h2"
             className={classes.typography}
@@ -49,9 +51,8 @@ export default function CenteredGrid() {
           >
             {"`<FullStackWebDeveloper/>`"}
           </Typography>
-          <Typography
-            className={classes.typography}
-          >{'>'} With a technical background in web & graphic design.{" "}
+          <Typography className={classes.typography}>
+            {">"} With a technical background in web & graphic design.{" "}
           </Typography>
           <Typography
             // variant="h6"
@@ -64,25 +65,22 @@ export default function CenteredGrid() {
     Being outdoors ⛰‍,
     Hard rock 👹]`}
           </Typography>
-          
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} sm={4} md={4}>
           <Typography
             variant="h6"
             // component="h2"
             className={classes.typography}
           >
-            Hello world,
-I’m Fred 🖐 
+            Hello world, I’m Fred 🖐
           </Typography>
           <Typography className={classes.typography}>
             {">"} based iN MTL
           </Typography>
-           <Typography className={classes.typography} >
+          <Typography className={classes.typography}>
             {">"} EN/FR Bilingual
           </Typography>
         </Grid>
-
       </Grid>
     </div>
   );
