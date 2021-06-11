@@ -23,6 +23,7 @@ inset: inherit !important;
 
 @media (max-width: 767.98px){
   .parallax-banner-layer-1{
+    inset: 0% -90% !important;
     /* background-size: cover; */
     /* background-position: center 60% !important; */
     /* background-repeat: no-repeat; */

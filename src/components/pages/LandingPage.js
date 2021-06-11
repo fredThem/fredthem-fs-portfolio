@@ -11,9 +11,10 @@ import {
 } from "react-scroll-parallax";
 import ParallaxBannerStyles from "./ParallaxBanner.module.css";
 import "./parallaxHero.css";
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import CenteredGrid from './grid';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -46,7 +47,6 @@ const LandingPage = () => {
       image:
         "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623367369/hero/mountain-foregroundNme_v2_pgilmp.png",
       amount: 0.2,
-      
     },
   ];
 
@@ -61,17 +61,30 @@ const LandingPage = () => {
               style={{ height: "80vh" }}
             >
               <div className={ParallaxBannerStyles.parallaxChildren}>
-              <Container maxWidth="sm">
-              <Typography component="div" style={{ backgroundColor: 'none', height: '100%' } }variant="h1" component="h2" > h1. Heading
-</Typography>
-                  <Typography component="div" style={{ backgroundColor: 'none', height: '100%' }} variant="h1" component="h2" > h1. Heading
-</Typography>
-      </Container>
-                        </div>
+                <Container maxWidth="sm">
+                  <CenteredGrid    />
+                  {/* <Typography
+                    component="div"
+                    style={{ backgroundColor: "none", height: "100%" }}
+                    variant="h1"
+                    component="h2"
+                  >
+                    {" "}
+                    <Typography
+                      component="div"
+                      style={{ backgroundColor: "none", height: "100%" }}
+                      variant="h1"
+                      component="h2"
+                    >
+                      {" "}
+                      h1. Heading
+                    </Typography>
+                  </Typography> */}
+                </Container>
+              </div>
             </ParallaxBanner>
           </div>
         </div>
-        
       </ParallaxProvider>
     </>
   );
