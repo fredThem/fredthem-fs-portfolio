@@ -20,8 +20,9 @@ const useStyles = makeStyles((theme) => ({
     // In Chinese and Japanese the characters are usually larger,
     // so a smaller fontsize may be appropriate.
     fontFamily: "Fira Code",
+    fontWeight: "700",
     color: "white",
-    textShadow: "1px 1px 1px rgba(0,0,180,0.8)",
+    textShadow: "1px 1px 1px rgba(0,0,180,0.8), 1px 0px 3px rgba(0,0,100,0.3)",
     // marginBottom: "10px",
   },
 }));
@@ -51,7 +52,7 @@ export default function CenteredGrid() {
           >
             {"`<FullStackWebDeveloper/>`"}
           </Typography>
-          <Typography className={classes.typography}>
+          <Typography className={classes.typography} style={{ margin: "16px" }} >
             {">"} With a technical background in web & graphic design.{" "}
           </Typography>
           <Typography
@@ -72,13 +73,13 @@ export default function CenteredGrid() {
             // component="h2"
             className={classes.typography}
           >
-            Hello world, I’m Fred 🖐
+            Hello world, I’m Fred{'\u2009'}🖐
           </Typography>
           <Typography className={classes.typography}>
-            {">"} based iN MTL
+            {">"} BASED IN MTL
           </Typography>
           <Typography className={classes.typography}>
-            {">"} EN/FR Bilingual
+            {">"} EN/FR BILINGUAL
           </Typography>
         </Grid>
       </Grid>
