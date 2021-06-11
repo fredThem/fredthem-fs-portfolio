@@ -12,13 +12,15 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="App">
+      <LandingPage />
+      
+      {/* <div className="App">
         <Switch>
           <Route exact path="/" component={LandingPage} />
 
           <Route exact path="/signup" component={Signup} />
         </Switch>
-      </div>
+      </div> */}
     </BrowserRouter>
   );
 }

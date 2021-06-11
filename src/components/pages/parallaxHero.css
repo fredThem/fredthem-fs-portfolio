@@ -1,28 +1,49 @@
 
+.parallax-banner-layer-1 {
+  background-size: 100% !important;
+  /* position: absolute; */
+  background-position: 0px 70% !important;
+  inset: 0% 0px !important;
+  background-origin: content-box, padding-box !important;
+
+}
+
+.parallax-banner-layer-2 {
+  background-repeat: no-repeat;
+  background-size: 100% auto !important;
+  background-position: bottom !important;
+inset: inherit !important;
+
+}
+.parallax-banner-layer-1, .parallax-banner-layer-2{
+  /* background-size: 100% auto !important;
+  background-position: center 110% !important;
+  background-repeat: no-repeat; */
+}
 
 @media (max-width: 767.98px){
   .parallax-banner-layer-1{
-    background-size: cover;
+    /* background-size: cover; */
     /* background-position: center 60% !important; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
   }
   .parallax-banner-layer-2{
-    background-size: 100% auto !important;
+    /* background-size: 100% auto !important;
     background-position: center 110% !important;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 }
 
 @media (min-width: 767.98px){
-  .parallax-banner-layer-1{
-    background-size: cover;
-    /* background-position: center 60% !important; */
+  /* .parallax-banner-layer-1{
+    background-size: cover !important;
     background-repeat: no-repeat;
-  }
+  } */
   .parallax-banner-layer-2{
-    background-size: 100% auto !important;
-    background-position: center 110% !important;
-    background-repeat: no-repeat;
+    /* background-size: 100% auto !important; */
+    /* background-position: center 110% !important; */
+    /* background-repeat: no-repeat; */
+  /* background-size:; */
   }
 }
 
@@ -50,15 +71,58 @@
   opacity: 0;}
 }
 
-@media (min-width: 992px){
-  .parallax-banner-layer-2{
-    background-size: 100% auto !important;
-    background-position: center 160% !important;
-    background-repeat: no-repeat;
+.parallaxChildren {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+      color: white;
+      font-size: 4vw;
+      font-weight: normal;
   }
-  .parallax-banner-layer-1{
-    background-size: 100% auto;
-    /* background-position: center 60% !important; */
-    background-repeat: no-repeat;
-  }
+}
+
+.bannerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bannerBg {
+  background: #fff;
+}
+
+.customChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.red {
+  background-color: rgba(#f74c36, 0.8);
+}
+
+.green {
+  background-color: rgba(#35f783, 0.8);
+}
+
+.blue {
+  background-color: rgba(#42a7f4, 0.8);
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

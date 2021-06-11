@@ -63,7 +63,7 @@ export default function Header() {
           </IconButton>
           <Link
             component="a"
-            href="../assets/files/CV_FredericDesmarais_FullStackDev_ENG.pdf"
+            href="https://raw.githubusercontent.com/fredThem/CV/98bab78a8d84b84a93142043aa4db629a75853e1/CV_FredericDesmarais_FullStackDev_ENG.pdf?token=ACPL5KPKYWPXLDSQXDUXG7DAYKO76"
             download
             className="mx-3"
             variant="body2"

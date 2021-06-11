@@ -11,7 +11,9 @@ import {
 } from "react-scroll-parallax";
 import ParallaxBannerStyles from "./ParallaxBanner.module.css";
 import "./parallaxHero.css";
-
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -37,15 +39,15 @@ const LandingPage = () => {
     },
     {
       image:
-        "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623298541/hero/mountain-background_crop_hhcwxe.png",
-      amount: 0.25,
+        "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623332309/hero/mountain-background_crop_oejast.png",
+      amount: 0,
     },
     {
       image:
-        "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623298291/hero/mountain-foregroundNme_mmnsl0.png",
-      amount: 0,
+        "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623367369/hero/mountain-foregroundNme_v2_pgilmp.png",
+      amount: 0.2,
+      
     },
-
   ];
 
   return (
@@ -56,23 +58,20 @@ const LandingPage = () => {
             <ParallaxBanner
               className={ParallaxBannerStyles.bannerBg}
               layers={layers}
-              style={{ height: "95vh" }}
+              style={{ height: "80vh" }}
             >
-              <h1> hello world</h1>
+              <div className={ParallaxBannerStyles.parallaxChildren}>
+              <Container maxWidth="sm">
+              <Typography component="div" style={{ backgroundColor: 'none', height: '100%' } }variant="h1" component="h2" > h1. Heading
+</Typography>
+                  <Typography component="div" style={{ backgroundColor: 'none', height: '100%' }} variant="h1" component="h2" > h1. Heading
+</Typography>
+      </Container>
+                        </div>
             </ParallaxBanner>
           </div>
         </div>
-        <div className="vertical">
-          <div className={ParallaxBannerStyles.bannerContainer}>
-            <ParallaxBanner
-              className={ParallaxBannerStyles.bannerBg}
-              layers={layers}
-              style={{ height: "75vh" }}
-            >
-              <h1> hello world</h1>
-            </ParallaxBanner>
-          </div>
-        </div>
+        
       </ParallaxProvider>
     </>
   );
