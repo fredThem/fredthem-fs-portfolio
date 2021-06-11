@@ -45,14 +45,14 @@ export default function SkillTreeGrid() {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://res.cloudinary.com/hjtkps4jr/image/upload/v1623414566/hero/skill-tree/frontEnd_iwn7dc.png"
+              src="https://res.cloudinary.com/hjtkps4jr/image/upload/v1623416332/hero/skill-tree/frontEnd_orvtxe.png"
               alt=""
               className={"img-fluid"}
             />
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://res.cloudinary.com/hjtkps4jr/image/upload/v1623414566/hero/skill-tree/backend_ssoyqb.png"
+              src="https://res.cloudinary.com/hjtkps4jr/image/upload/v1623416212/hero/skill-tree/backend_kftidi.png"
               alt=""
               className={"img-fluid"}
             />
