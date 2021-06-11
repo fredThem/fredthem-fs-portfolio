@@ -1749,6 +1749,11 @@
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.4.1.tgz#600f2275ff54739ad5ac0102f1467b8963cd5f71"
   integrity sha512-0yPjzuzGMkW1GkrC8yWsiN7vt1OzkMIi9HgxRmKREZl2wnNPOKo/yScTjXf/O57HM8dltqxPF6jlNLFVtc2qdw==
 
+"@fontsource/fira-code@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/fira-code/-/fira-code-4.4.5.tgz#380c964676b1e873b192862ce03a7ad1c7838516"
+  integrity sha512-ap1UKABzbPrUTgIB376n8CSJ7mbJYxGm52A60BHnGHjU2cSDBqNUAColdERgFWgLHfybWXQT13ZrNhAdynf9rg==
+
 "@fontsource/roboto@^4.4.2":
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.4.2.tgz#538425f02a13baf545eb26de5f104f6697e19542"

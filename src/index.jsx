@@ -16,6 +16,7 @@ import "./stylesheets/index.css";
 //theming
 import { ThemeProvider } from "@material-ui/styles";
 import theme from "components/themes/theme";
+
 //rendering
 import { ParallaxProvider } from "react-scroll-parallax";
 import App from "./App";
