@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     // so a smaller fontsize may be appropriate.
     fontFamily: "Fira Code",
     color: "white",
-    textShadow: "1px 1px 1px rgba(0,0,180,0.8)",
+    textShadow: "1px 1px 1px rgba(0,0,180,0.8), 1px 0px 3px rgba(0,0,100,0.3)",
     // marginBottom: "10px",
   },
 }));
