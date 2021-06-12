@@ -1,7 +1,11 @@
 {
-  "name": "experimenting",
+  "name": "fredThem-fs-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "yarn": "1.22.10",
+    "node": "16.1.0"
+  },
   "dependencies": {
     "@csstools/normalize.css": "^11.0.1",
     "@fontsource/fira-code": "^4.4.5",
