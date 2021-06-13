@@ -10,6 +10,7 @@ import { shadows } from "@material-ui/system";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    marginTop: "-20%",
   },
   paper: {
     padding: theme.spacing(2),

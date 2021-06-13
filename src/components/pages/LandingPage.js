@@ -31,12 +31,12 @@ const LandingPage = () => {
     {
       image:
         "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623410463/hero/mountain-background_crop_syugir.png",
-      amount: 0,
+      amount: 0.2,
     },
     {
       image:
         "https://res.cloudinary.com/hjtkps4jr/image/upload/v1623367369/hero/mountain-foregroundNme_v2_pgilmp.png",
-      amount: 0.2,
+      amount: 0,
     },
   ];
 
@@ -48,10 +48,10 @@ const LandingPage = () => {
             <ParallaxBanner
               className={ParallaxBannerStyles.bannerBg}
               layers={layers}
-              style={{ height: "80vh" }}
+              style={{ height: "80vh", maxHeight:  "520px" }}
             >
               <div className={ParallaxBannerStyles.parallaxChildren}>
-                <Container maxWidth="md" style={{ marginTop: "-16%" }}>
+                <Container maxWidth="md">
                   <CenteredGrid />
                 </Container>
               </div>
